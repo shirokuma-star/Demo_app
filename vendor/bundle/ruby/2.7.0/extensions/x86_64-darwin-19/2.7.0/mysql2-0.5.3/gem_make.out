@@ -1,5 +1,5 @@
 current directory: /Users/takanotaketo/Portfolio/demo_app/vendor/bundle/ruby/2.7.0/gems/mysql2-0.5.3/ext/mysql2
-/Users/takanotaketo/.rbenv/versions/2.7.2/bin/ruby -I /Users/takanotaketo/.rbenv/versions/2.7.2/lib/ruby/2.7.0 -r ./siteconf20210322-792-wildzi.rb extconf.rb
+/Users/takanotaketo/.rbenv/versions/2.7.2/bin/ruby -I /Users/takanotaketo/.rbenv/versions/2.7.2/lib/ruby/2.7.0 -r ./siteconf20210322-2622-1nn2unk.rb extconf.rb --with-ldflags\=-L/usr/local/opt/openssl/lib
 checking for rb_absint_size()... yes
 checking for rb_absint_singlebit_p()... yes
 checking for rb_wait_for_single_fd()... yes
@@ -23,10 +23,7 @@ checking for MYSQL_OPTION_MULTI_STATEMENTS_ON in mysql.h... yes
 checking for MYSQL_OPTION_MULTI_STATEMENTS_OFF in mysql.h... yes
 checking for my_bool in mysql.h... no
 -----
-Don't know how to set rpath on your system, if MySQL libraries are not in path mysql2 may not load
------
------
-Setting libpath to /usr/local/Cellar/mysql/8.0.23_1/lib
+Setting rpath to /usr/local/Cellar/mysql/8.0.23_1/lib
 -----
 creating Makefile
 
@@ -54,8 +51,7 @@ compiling mysql2_ext.c
 compiling result.c
 compiling statement.c
 linking shared-object mysql2/mysql2.bundle
-ld: library not found for -lssl
-clang: error: linker command failed with exit code 1 (use -v to see invocation)
-make: *** [mysql2.bundle] Error 1
 
-make failed, exit code 2
+current directory: /Users/takanotaketo/Portfolio/demo_app/vendor/bundle/ruby/2.7.0/gems/mysql2-0.5.3/ext/mysql2
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 mysql2.bundle ./.gem.20210322-2622-13ub78k/mysql2
