@@ -53,16 +53,6 @@ p {
   line-height: 1.7em;
 }
 
-.navbar-inverse {
-    background-color:#3ECF3B;
-    border-color:#3ECF3B;
-}
-
-.navbar-inverse .navbar-nav > li > a {
-    color: white;
-}
-
-
 /* header */
 
 #logo {
@@ -91,6 +81,22 @@ header .container {
     width: 100%;
     margin: 0 auto;
 }
+
+.navbar-inverse {
+    background-color:#3ECF3B;
+    border-color:#3ECF3B;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: white;
+}
+
+.navbar-inverse .navbar-nav > li > form {
+    display: block;
+    padding: 10px 15px;
+}
+
+
 
 /* footer */
 

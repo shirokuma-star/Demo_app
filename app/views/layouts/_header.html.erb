@@ -2,6 +2,14 @@
       <div class="container">
             <%= link_to "Prepperlife", root_path, id: "logo" %>
             <nav>
+                <ul class="nav navbar-nav navbar-left">
+                    <li>
+                        <%= form_tag(root_path,:method => 'get') do %>
+                            <%= text_field_tag :search %>
+                            <%= submit_tag 'Search', :name => nil %>
+                        <% end %>
+                    </li>
+                </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><%= link_to "Home",   static_pages_home_path %></li>
                     <li><%= link_to "Help",   static_pages_help_path %></li>
