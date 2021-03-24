@@ -32,9 +32,16 @@ gem 'bootsnap', '>= 1.4.4', require: false
 gem 'bootstrap-sass', '3.4.1'
 gem 'rubocop', require: false
 gem 'rubocop-rails', require: false
+
+# ログイン機能
 gem 'devise'
+
+# 日本語化
+gem 'rails-i18n', '~> 6.0'
 gem 'devise-i18n'
-gem 'devise-i18n-views'
+
+# Bootstrap
+gem 'devise-bootstrap-views', '~> 1.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
