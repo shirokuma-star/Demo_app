@@ -16,6 +16,8 @@
 
 // ***** 次を追加 *****
 @import "bootstrap/scss/bootstrap";
+// @import "bootstrap-sprockets";
+// @import "bootstrap";
 // ***** 以上を追加 *****
 
 //  max-width
@@ -116,4 +118,8 @@ header .container {
 .navbar-inverse .navbar-nav > li > form {
     display: block;
     padding: 10px 15px;
+}
+
+.navbar-left {
+  float: left;
 }
